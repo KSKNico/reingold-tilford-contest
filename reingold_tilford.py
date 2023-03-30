@@ -120,9 +120,9 @@ def draw_tree_recursive(node, ax):
     if node == None:
         return
     if node.left != None:
-        ax.plot([node.x, node.left.x], [-node.depth, -node.left.depth], color="black", linewidth=0.4)
+        ax.plot([node.x, node.left.x], [-node.depth, -node.left.depth], color="black", linewidth=0.05)
     if node.right != None:
-        ax.plot([node.x, node.right.x], [-node.depth, -node.right.depth], color="white", linewidth=0.4)
+        ax.plot([node.x, node.right.x], [-node.depth, -node.right.depth], color="white", linewidth=0.05)
     draw_tree_recursive(node.left, ax)
     draw_tree_recursive(node.right, ax)
 
